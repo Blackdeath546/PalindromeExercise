@@ -9,8 +9,12 @@ namespace PalindromeExerciseTests
         [Theory]
         [InlineData("racecar", true)]
         [InlineData("amma", true)]
+        [InlineData("bob", true)]
+        [InlineData("tat", true)]
+        [InlineData("mummy", false)]
+        [InlineData("fluff", false)]
         [InlineData("omma", false)]
-        [InlineData("sussy", false)]
+        [InlineData("suspicious", false)]
         public void IsPalindromeTest(string input, bool expected)
         {
             //Arrange
